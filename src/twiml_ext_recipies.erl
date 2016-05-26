@@ -20,7 +20,7 @@
         ]).
 
 random() ->
-    {A, B, C} = now(),
+    {A, B, C} = erlang:timestamp(),
     random:seed(A, B, C),
     N = random:uniform(15),
     recipe(N).
