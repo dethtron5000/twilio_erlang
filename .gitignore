@@ -3,6 +3,5 @@
 *.beam
 *.dump
 *~
-ebin/
-ebin/*.beam
+ebin
 /deps
