@@ -21,8 +21,8 @@
 
 random() ->
     {A, B, C} = erlang:timestamp(),
-    random:seed(A, B, C),
-    N = random:uniform(15),
+    rand:seed(exsplus, {A, B, C}),
+    N = rand:uniform(15),
     recipe(N).
 
 recipe(N) ->
